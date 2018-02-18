@@ -119,7 +119,7 @@ class Game extends PureComponent {
                           onClick={this.startGame} />
           </div>
 
-          {game.started && <h2>{game.players[game.turn].name}</h2>}
+          {game.started && <h2>{currentPlayerName}</h2>}
           {this.displayWinnerName()}
 
           <div className="board">
