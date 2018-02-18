@@ -26,6 +26,7 @@ export default (state = [], { type, payload } = {}) => {
 
     case GAME_CREATED :
       const newGame = { ...payload }
+      console.log(newGame)
       return [newGame].concat(state)
 
     case GAME_UPDATED :
